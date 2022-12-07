@@ -1,0 +1,171 @@
+body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .Conteneur
+{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  perspective: 650px;
+}
+
+.Right
+{
+  height: 500px; width: 400px;
+  position: absolute; top: 0px;
+  animation: rotateAnimation 4s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.Left
+{
+  height: 500px; width: 400px;
+  position: absolute; top: 0px;
+}
+
+
+.screen1
+{
+background: url(lefty.jpg);
+   height: 99%;
+   width: 99%;
+   border-bottom-left-radius: 25px;
+   border-top-left-radius: 25px;
+   position: absolute;
+   left: 1%;
+   margin-top: 1%;
+   
+}
+.rectangle1
+{
+  position: relative;
+background-color: rgb(192, 192, 192);
+   height: 500px;
+   width: 200px;
+   border-bottom-left-radius: 25px;
+   border-top-left-radius: 25px;
+   margin-top: 4%;
+
+}
+.screen2
+{
+background: url(righty.jpg);
+   height: 99%;
+   width: 99%;
+   border-bottom-right-radius: 25px;
+   border-top-right-radius: 25px;
+   position: absolute;
+   right: 1%;
+   margin-top: 1%;
+   margin-bottom: 1%;
+
+}
+
+.screen2b
+{
+  background: url(front.jpg);
+   height: 99%;
+   width: 98%;
+   border-bottom-right-radius: 25px;
+   border-top-right-radius: 25px;
+   position: absolute;
+   right: 1%;
+   margin-top: 0.5%;
+   margin-bottom: 1%;
+
+}
+
+.rectangle2
+{
+background-color: rgb(192, 192, 192);
+   height: 500px;
+   width: 200px;
+   border-bottom-right-radius: 25px;
+   border-top-right-radius: 25px;
+   margin-top: 4%;
+   margin-left: 50%;
+
+   position:absolute;
+
+   
+
+}
+
+.rectangle2b
+{
+background-color: rgb(192, 192, 192);
+   height: 500px;
+   width: 200px;
+   border-bottom-right-radius: 25px;
+   border-top-right-radius: 25px;
+   margin-top: 4%;
+   margin-left: 50%;
+   position: absolute;
+   transform: translateZ(-7px);
+   
+
+}
+
+.coinhaut1
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(4px) translateY(27px) rotateX(10deg);
+        }
+.coinhaut2
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(1px) translateY(21px) rotateX(30deg);
+        }
+.coinhaut3
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(-4px) translateY(15px) rotateX(50deg);
+        } 
+.coinbas1
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(5.5px) translateY(489px) rotateX(-10deg);
+        }
+.coinbas2
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(3px) translateY(495px) rotateX(-30deg);
+        }
+.coinbas3
+        {
+            background-color: rgb(192, 192, 192);
+            height: 10px;  width: 10px;
+            position: absolute; right: 0px;
+            transform: rotateY(90deg) translateX(3px) translateZ(0px) translateY(499px) rotateX(-50deg);
+        }
+
+.border
+{
+     background: linear-gradient(57deg,
+     rgb(192, 192, 192) 0%,
+      rgb(192, 192, 192) 36%,
+       rgb(192, 192, 192) 41%,
+         rgb(192, 192, 192) 47%,
+         rgb(192, 192, 192) 95%);
+     height: 454px;  width: 10px;
+     border-top-right-radius: 10%;
+     position: absolute; right: 0px;
+     transform: rotateY(90deg) translateX(4px) translateZ(5.5px) translateY(35px);
+}
+
+@keyframes rotateAnimation {
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(-180deg);}
+}
