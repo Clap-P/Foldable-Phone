@@ -54,8 +54,8 @@ background-color: rgb(192, 192, 192);
 background: url(righty.jpg);
    height: 99%;
    width: 99%;
-   border-bottom-right-radius: 25px;
-   border-top-right-radius: 25px;
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
    position: absolute;
    right: 1%;
    margin-top: 1%;
@@ -103,7 +103,63 @@ background-color: rgb(192, 192, 192);
    
 
 }
+.battery
+{
+background: url(battery.png);
+position:absolute;
+height:  6% ; width: 22%;
+background-size: 45px 36px;
+right : 1%;
+top : 0.2%;
+transform: translateX(15px) translateY(-1px);
+}
 
+.insta
+{
+background: url(insta.png);
+background-size: 100% 100%;
+transform: translateX(75px) translateY(350px);
+}
+
+.grid{
+  height:23px;
+  position:relative;
+  bottom:4px;
+}
+
+
+
+.bar{
+  margin:1 auto;
+  transform: translateX(3px) translateY(150px);
+  width:190px;
+  border-radius:30px;
+  border:0px solid #dcdcdc;
+}
+.bar:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+}
+.searchbar{
+  height:20px;
+  border:none;
+  border-radius:30px;
+  width:180px;
+  font-size:16px;
+  outline: none;
+  transform: translateX(4px) translateY(0px);
+  
+}
+.voice{
+  height:13px;
+  position:relative;
+  transform: translateX(162px) translateY(-23px);
+  top:5px;
+  left:10px;
+}
 
 
 
@@ -134,8 +190,8 @@ input[type="checkbox"]:checked ~ .Conteneur > .Right
         }
 
 @keyframes rotateAnimation {
-	0% {transform: rotateY(-75deg);}
-	100% {transform: rotateY(-140deg);}
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(-10deg);}
 }
 
 
