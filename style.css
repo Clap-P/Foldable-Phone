@@ -82,8 +82,6 @@ background: url(righty.jpg);
 background-color: rgb(192, 192, 192);
    height: 500px;
    width: 200px;
-   border-bottom-right-radius: 25px;
-   border-top-right-radius: 25px;
    margin-top: 4%;
    margin-left: 50%;
 
@@ -98,8 +96,6 @@ background-color: rgb(192, 192, 192);
 background-color: rgb(192, 192, 192);
    height: 500px;
    width: 200px;
-   border-bottom-right-radius: 25px;
-   border-top-right-radius: 25px;
    margin-top: 4%;
    margin-left: 50%;
    position: absolute;
@@ -108,63 +104,8 @@ background-color: rgb(192, 192, 192);
 
 }
 
-.coinhaut1
-        {
-            background-color: rgb(192, 192, 192);
-            height: 5px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(4px) translateY(32px) rotateX(25deg);
-        }
-.coinhaut2
-        {
-            background-color: rgb(192, 192, 192);
-            height: 5px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(2px) translateY(28px) rotateX(20deg);
-        }
-.coinhaut3
-        {
-            background-color: rgb(192, 192, 192);
-            height: 10px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(0px) translateY(21px) rotateX(30deg);
-        }
-.coinhaut4
-        {
-            background-color: rgb(192, 192, 192);
-            height: 5px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(-5px) translateY(18px) rotateX(50deg);
-        } 
-        
-.coinhaut5
-        {
-            background-color: rgb(192, 192, 192);
-            height: 5px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(-8px) translateY(16px) rotateX(60deg);
-        } 
-.coinbas1
-        {
-            background-color: rgb(192, 192, 192);
-            height: 10px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(5.5px) translateY(489px) rotateX(-10deg);
-        }
-.coinbas2
-        {
-            background-color: rgb(192, 192, 192);
-            height: 10px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(3px) translateY(495px) rotateX(-30deg);
-        }
-.coinbas3
-        {
-            background-color: rgb(192, 192, 192);
-            height: 10px;  width: 10px;
-            position: absolute; right: 0px;
-            transform: rotateY(90deg) translateX(3px) translateZ(0px) translateY(499px) rotateX(-50deg);
-        }
+
+
 
 .border
 {
@@ -174,13 +115,25 @@ background-color: rgb(192, 192, 192);
        rgb(192, 192, 192) 41%,
          rgb(192, 192, 192) 47%,
          rgb(192, 192, 192) 95%);
-     height: 456px;  width: 10px;
+     height: 500px;  width: 10px;
      border-top-right-radius: 10%;
      position: absolute; right: 0px;
-     transform: rotateY(90deg) translateX(4px) translateZ(5px) translateY(35px);
+     transform: rotateY(90deg) translateX(4px) translateZ(5px) translateY(16px);
 }
+.topBorder
+{
+   background-color: rgb(192, 192, 192);
+     height: 10px;  width: 200px;
+     position: absolute; right: 0px;
+     transform: translateX(0px) translateZ(-3px) translateY(11px) rotateX(90deg);
+}
+input[type="checkbox"]:checked ~ .Conteneur > .Right 
+        {
+            animation: return 2s linear;
+            animation-fill-mode: forwards;
+        }
 
 @keyframes rotateAnimation {
-	0% {transform: rotateY(-100deg);}
-	100% {transform: rotateY(-160deg);}
+	0% {transform: rotateY(-75deg);}
+	100% {transform: rotateY(-140deg);}
 }
