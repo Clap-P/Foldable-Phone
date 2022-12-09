@@ -15,7 +15,7 @@ body {
 {
   height: 500px; width: 400px;
   position: absolute; top: 0px;
-  animation: rotateAnimation 4s linear infinite;
+  animation: rotateAnimation 4s linear;
   transform-style: preserve-3d;
 }
 
@@ -36,6 +36,8 @@ background: url(lefty.jpg);
    position: absolute;
    left: 1%;
    margin-top: 1%;
+   opacity: 0;
+   transition: opacity 5s;
    
 }
 .rectangle1
@@ -60,6 +62,8 @@ background: url(righty.jpg);
    right: 1%;
    margin-top: 1%;
    margin-bottom: 1%;
+   opacity: 0;
+   transition: opacity 4s;
 
 }
 
@@ -68,8 +72,7 @@ background: url(righty.jpg);
   background: url(front.jpg);
    height: 99%;
    width: 98%;
-   border-bottom-right-radius: 25px;
-   border-top-right-radius: 25px;
+
    position: absolute;
    right: 1%;
    margin-top: 0.5%;
@@ -114,12 +117,238 @@ top : 0.2%;
 transform: translateX(15px) translateY(-1px);
 }
 
+.percentage
+{
+background: url(percentage.png);
+position:absolute;
+height:  6% ; width: 22%;
+background-size: 45px 36px;
+right : 1%;
+top : 0.2%;
+transform: translateX(-2px) translateY(-1px);
+}
+
+
+.batteryReverse
+{
+background: url(battery.png);
+position:absolute;
+height:  6% ; width: 22%;
+background-size: 45px 36px;
+right : 1%;
+top : 0.2%;
+transform: translateX(-162px) translateY(-1px);
+}
+
+.percentageReverse
+{
+background: url(percentageReverse.png);
+position:absolute;
+height:  6% ; width: 22%;
+background-size: 45px 36px;
+right : 1%;
+top : 0.2%;
+transform: translateX(-143px) translateY(-1px);
+}
+
+.wifi
+{
+  background: url(wifi.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-45px) translateY(-1px);
+
+}
+
+.wifiReverse
+{
+  background: url(wifiReverse.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-100px) translateY(-1px);
+
+}
+
+.date
+{
+  background: url(Date.png);
+  position:absolute;
+  height:  18% ; width: 66%;
+  background-size: 135px 108px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-15px) translateY(65px);
+
+}
+
+.network
+{
+  background: url(network.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-25px) translateY(-1px);
+
+}
+
+.networkReverse
+{
+  background: url(networkReverse.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-120px) translateY(-1px);
+
+}
+
+.time
+{
+  background: url(time.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-150px) translateY(-1px);
+
+}
+
+.timeReverse
+{
+  background: url(timeReverse.png);
+  position:absolute;
+  height:  6% ; width: 22%;
+  background-size: 45px 36px;
+  right : 1%;
+  top : 0.2%;
+  transform: translateX(-3px) translateY(-1px);
+
+}
+
+.icon
+{
+  width: 22%;
+  height: 8.8%;
+  position: absolute;
+  transition: all .1s ease-in-out;
+}
+
+.icon:hover 
+        {
+            height: 12%;
+            width: 30%;
+        }
+
 .insta
 {
-background: url(insta.png);
+background: url(insta.jpg);
 background-size: 100% 100%;
-transform: translateX(75px) translateY(350px);
+transform: translateX(80px) translateY(370px);
 }
+
+.twitter
+{
+background: url(twitter.png);
+background-size: 100% 100%;
+transform: translateX(140px) translateY(370px);
+}
+
+.call
+{
+background: url(call.png);
+background-size: 100% 100%;
+transform: translateX(20px) translateY(430px);
+}
+
+.message
+{
+background: url(message.png);
+background-size: 100% 100%;
+transform: translateX(140px) translateY(430px);
+}
+
+.galery
+{
+background: url(galery.png);
+background-size: 100% 100%;
+transform: translateX(50px) translateY(430px);
+}
+
+.photo
+{
+background: url(photo.png);
+background-size: 100% 100%;
+transform: translateX(110px) translateY(430px);
+}
+
+.snap
+{
+  background: url(snap.jpg);
+  background-size: 100% 100%;
+  transform: translateX(20px) translateY(370px);
+}
+  
+.discord
+{
+  background: url(discord.png);
+  background-size: 100% 100%;
+  transform: translateX(20px) translateY(370px);
+}
+
+.youtube
+{
+  background: url(youtube.png);
+  background-size: 100% 100%;
+  transform: translateX(80px) translateY(370px);
+}
+
+.dokkan
+{
+  background: url(dokkan.png);
+  background-size: 100% 100%;
+  transform: translateX(140px) translateY(370px);
+}
+
+.weather
+{
+  background: url(weather.png);
+  background-size: 100% 100%;
+  transform: translateX(15px) translateY(150px);
+  height: 105px;
+  width: 175px;
+}
+
+
+.callReverse
+{
+background: url(callReverse.png);
+background-size: 100% 100%;
+transform: translateX(130px) translateY(430px);
+}
+
+.photoReverse
+{
+background: url(photo.png);
+background-size: 100% 100%;
+transform: translateX(20px) translateY(430px);
+}
+
+
+
+
+
+
+
 
 .grid{
   height:23px;
@@ -183,26 +412,42 @@ transform: translateX(75px) translateY(350px);
      position: absolute; right: 0px;
      transform: translateX(0px) translateZ(-3px) translateY(11px) rotateX(90deg);
 }
-input[type="checkbox"]:checked ~ .Conteneur > .Right 
+input[type="checkbox"]:checked ~ .Conteneur .Right 
         {
-            animation: return 2s linear;
+            animation: rotateAnimation 2s linear;
             animation-fill-mode: forwards;
         }
 
+        input[type="checkbox"]:checked ~ .Conteneur > .Left > .rectangle1 > .screen1 > .icon
+        {
+          z-index: -100;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ .Conteneur .Right 
+        {
+            animation: rotateAnimation2 2s linear;
+            animation-fill-mode: forwards;
+        }
+        input[type="checkbox"]:not(:checked) ~ .Conteneur > .Left > .rectangle1 > .screen1 > .icon
+        {
+          z-index: 100;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ .Conteneur .screen1
+        {
+            opacity: 1;
+        }
+        input[type="checkbox"]:not(:checked) ~ .Conteneur .screen2
+        {
+            opacity: 1;
+        }
 @keyframes rotateAnimation {
 	0% {transform: rotateY(0deg);}
-	100% {transform: rotateY(-10deg);}
+	100% {transform: rotateY(-180deg);}
 }
 
-
-
-#time {
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+@keyframes rotateAnimation2 {
+	0% {transform: rotateY(-180deg);}
+	100% {transform: rotateY(0deg);}
 }
+
